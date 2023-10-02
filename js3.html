@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mul_and_Div</title>
+</head>
+<body>
+    <form>
+        1st Number: <input type="text" placeholder="number1" id="1stNum"><br><br>
+        2nd Number: <input type="text" placeholder="number2" id="2ndNum"><br><br>
+        <input type="button" onClick="multiplyBy()" value="Multiply" />
+        <input type="button" onClick="divideBy()" value="Divide" />
+
+    </form>
+    <p>The Result is: <br>
+    <span id="result"></span></p>
+    <script>
+    function multiplyBy()
+{
+        num1 = document.getElementById("1stNum").value;
+        num2 = document.getElementById("2ndNum").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("1stNum").value;
+        num2 = document.getElementById("2ndNum").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+
+    </script>
+</body>
+</html>
